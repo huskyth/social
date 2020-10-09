@@ -25,6 +25,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 import tenghao.tool.MyHandlerTool;
+import tenghao.tool.Permition;
 import tenghao.tool.Tool;
 
 public class MainActivity extends Activity {
@@ -54,6 +55,7 @@ public class MainActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        Permition.isGrantExternalRW(this,1);
         mH = new MyHandlerTool.MyHandler(new MyHandlerTool.MyCallback() {
             @Override
             public boolean handleMessage(@NonNull Message msg) {

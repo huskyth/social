@@ -1,7 +1,7 @@
 package tenghao.tool;
 
 public class Tool {
-	public static String publicIp = "192.168.172.1";
+	public static String publicIp = "192.168.253.1";
 
 	public static int publicCut = 8888;
 

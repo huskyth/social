@@ -3,7 +3,6 @@ package content.write;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.BitmapFactory;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +21,6 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import tenghao.tab.CircleNineGridAdapter;
-import tenghao.tenghao.MainActivity;
 import tenghao.tenghao.RefreshCircle;
 
 public class CircleAdapter extends BaseAdapter {
@@ -94,7 +92,6 @@ public class CircleAdapter extends BaseAdapter {
             mSelectList.add(dir);
             sb.append(dir+"\n");
         }
-        Log.e(MainActivity.TAG,tmp.content+"\n"+sb.toString());
 
         viewHolder.rv.setLayoutManager(new GridLayoutManager(ctx, 3));
         adapter = new CircleNineGridAdapter(ctx, mSelectList, viewHolder.rv);
@@ -106,7 +103,7 @@ public class CircleAdapter extends BaseAdapter {
 
         viewHolder.text_name.setText(circleList.get(position).newnickname);
         viewHolder.text_content.setText(circleList.get(position).content);
-        viewHolder.iv.setImageBitmap(BitmapFactory.decodeResource(ctx.getResources(),R.mipmap.add_icon));
+        viewHolder.iv.setImageBitmap(BitmapFactory.decodeResource(ctx.getResources(),R.drawable.logo));
         viewHolder.datetime.setText(circleList.get(position).datetime);
         return view;
     }

@@ -52,7 +52,6 @@ public class RefreshCircle extends Thread {
                 temp_timestamp_path = din.readUTF();
                 temp_id = din.readUTF();
                 img_info = din.readUTF();
-
                 myCircleContent mCC = new myCircleContent(temp_new_name, temp_content,
                         temp_datetime, temp_timestamp_path, temp_id, img_info);
                 tmp.add(mCC);

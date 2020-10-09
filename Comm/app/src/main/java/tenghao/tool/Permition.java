@@ -16,12 +16,9 @@ public class Permition {
 
             int storagePermission = activity.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
             int cameraPermission = activity.checkSelfPermission(Manifest.permission.CAMERA);
-            //检测是否有权限，如果没有权限，就需要申请
             if (storagePermission != PackageManager.PERMISSION_GRANTED ||
                     cameraPermission != PackageManager.PERMISSION_GRANTED) {
-                //申请权限
                 activity.requestPermissions(PERMISSIONS_CAMERA_AND_STORAGE, requestCode);
-                //返回false。说明没有授权
                 return false;
             }
         }

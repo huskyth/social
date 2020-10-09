@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:background="@drawable/background"
+        android:hint="手机号"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/et_pasw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_phone"
+        android:layout_alignLeft="@id/et_name"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/background"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/et_ensure_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pasw"
+        android:layout_alignLeft="@id/et_name"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/background"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_ensure_psw"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/background"
+        android:hint="昵称"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:textSize="20dip" />
+
+    <LinearLayout
+        android:id="@+id/lit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_nickname"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:onClick="submit"
+            android:text="提交"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

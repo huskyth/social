@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        >
+        <TextView 
+             android:id="@+id/title_friend"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="好友(点击关注)"
+             android:textSize="15sp"
+             android:padding="8sp"
+             android:background="@drawable/shape_corner"
+             android:textColor="#000000"
+             android:gravity="center_horizontal"
+        />
+        <ListView
+             android:layout_below="@id/title_friend"
+             android:layout_width="fill_parent" 
+             android:layout_height="wrap_content"
+             android:id="@+id/friend_listview"
+             android:transcriptMode="normal"
+             android:fastScrollEnabled="true"
+			 android:background="#FCFDD5"
+			 android:layout_alignParentRight="true"
+			 android:divider="@null"
+        ></ListView>
+</RelativeLayout>

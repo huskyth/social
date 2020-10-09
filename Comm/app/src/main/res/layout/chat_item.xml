@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<RelativeLayout
+    android:id="@+id/left_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:background="@drawable/chat_left_last"
+    >
+    
+<TextView
+    android:id="@+id/tv_left"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+ android:paddingTop="5sp"
+ android:paddingLeft="15sp"
+ android:paddingRight="5sp"
+ android:paddingBottom="5sp"
+ android:maxLines="10"
+  android:maxWidth="180sp"
+         android:singleLine="false"
+       android:textSize="15sp"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/chat_right_last">
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxWidth="180sp"
+       android:maxLines="10"
+ 	android:paddingTop="5sp"
+ 	android:paddingLeft="6sp"
+ 	android:paddingRight="12sp"
+ 	android:paddingBottom="5sp"
+        android:singleLine="false"
+        android:textSize="15sp"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

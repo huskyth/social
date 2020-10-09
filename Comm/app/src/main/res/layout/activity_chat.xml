@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+      android:fitsSystemWindows="true"
+        >
+        <TextView 
+            android:id="@+id/title_nickname"
+             android:layout_width="fill_parent"
+             android:layout_height="40sp"
+             android:text="我的群聊"
+             android:textSize="15sp"
+             android:background="#C7EDCC"
+             android:textColor="#000000"
+             android:gravity="center"
+            />
+        <LinearLayout
+		     android:orientation="horizontal"
+		     android:layout_width="match_parent" 
+		     android:layout_height="40dp"
+		     android:id="@+id/line_edit_and_btn"
+		     android:layout_alignParentBottom="true">
+			    <EditText
+			          android:layout_width="wrap_content" 
+			          android:layout_height="40dp"
+			          android:layout_marginLeft="3dp"
+			          android:layout_weight="5"
+			          android:id="@+id/et_content"
+			          android:background="@drawable/edit_style"
+			          android:padding="3dp"
+			          android:hint="输入你想说的话"
+					  android:layout_marginBottom="5sp"
+			        />
+			    <Button
+			         android:layout_width="wrap_content" 
+			         android:layout_height="40dp"
+			         android:layout_weight="1"
+			         android:text="发送"
+			         android:onClick="send"
+			         android:layout_marginBottom="5sp"
+			         android:background="@drawable/btn_selector"
+			   		 android:layout_gravity="right"
+			         android:id="@+id/btn_send"
+			    />
+         </LinearLayout>
+    <ListView
+             android:layout_above="@id/line_edit_and_btn"
+             android:layout_below="@id/title_nickname"
+             android:layout_width="fill_parent" 
+             android:layout_height="wrap_content"
+             android:id="@+id/listview"
+             android:transcriptMode="normal"
+			 android:fastScrollEnabled="true"   
+			   
+        android:scrollbarStyle="insideInset"
+  
+    ></ListView>
+
+    
+    
+    
+    
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:padding="5sp"
+    >
+         <TextView 
+             android:id="@+id/write_back"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="信息反馈"
+             android:textSize="15sp"
+             android:padding="6sp"
+             android:background="@drawable/shape_corner"
+             android:textColor="#000000"
+             android:gravity="center_horizontal"
+         />
+    <EditText 
+        android:layout_marginTop="5sp"
+        android:layout_below="@id/write_back"
+        android:hint="您有什么想反馈的..."
+         android:layout_width="fill_parent" 
+          android:layout_height="100sp"
+          android:id="@+id/et_back_send"
+               android:background="@drawable/edit_style"
+               android:maxLength="50"
+        />       
+    <Button 
+         android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+        android:text="发送"
+        android:layout_below="@id/et_back_send"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_selector"
+        android:onClick="WriteBack"
+        />
+    
+    
+</RelativeLayout>

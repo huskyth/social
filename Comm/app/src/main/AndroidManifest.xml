@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cjlu"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_back"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+        <activity
+
+            android:name="tenghao.tenghao.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="tenghao.tenghao.RegisterActivity"
+            android:label="@string/register" />
+
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name="tenghao.tenghao.LoginActivity"
+            android:label="@string/login">
+
+        </activity>
+
+        <activity
+            android:name="tenghao.tab.MajorActivity"
+            android:label="@string/login">
+
+        </activity>
+
+        <activity
+            android:name="tenghao.tab.MessageActivity"
+            android:label="@string/login">
+
+        </activity>
+
+        <activity
+            android:name="tenghao.tab.PersonActivity"
+            android:label="@string/login">
+
+        </activity>
+
+        <activity
+            android:name="tenghao.tab.RefreshActivity"
+            android:label="@string/login">
+
+        </activity>
+        <activity
+            android:name="tenghao.tab.CicleActivity"
+            android:label="@string/login">
+
+        </activity>
+
+
+        <activity
+            android:name="content.friend.FriendActivity"
+            android:label="@string/friend_activity">
+
+        </activity>
+
+        <activity
+            android:name="function.chat.ChatActivity"
+            android:label="@string/friend_activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+        </activity>
+
+
+
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="content.write.WriteCircleActivity">
+
+        </activity>
+
+
+        <activity android:name="content.friend.SingleFriendActivity">
+
+        </activity>
+
+
+        <activity android:name="tenghao.tab.CommentActivity">
+
+        </activity>
+
+
+        <activity android:name="tenghao.tenghao.GetIdActivity">
+
+        </activity>
+        <activity android:name="content.write.WriteBackActivity">
+
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+</manifest>

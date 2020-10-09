@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/background"
+        android:hint="学号/工号"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:layout_alignLeft="@id/et_name"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/background"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:textSize="20dip" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110sp"
+        android:background="@drawable/logo" />
+
+
+    <LinearLayout
+        android:id="@+id/lit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:onClick="login"
+            android:text="登录" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lit"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"
+            android:gravity="right"
+            android:onClick="register"
+            android:paddingBottom="8sp"
+            android:text="新用户注册"
+            android:textColor="#00B6FF"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/auto_login_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lit"
+        android:orientation="vertical"
+        android:paddingTop="10sp">
+
+        <RadioButton
+            android:id="@+id/auto_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="自动登录" />
+    </RadioGroup>
+
+
+</RelativeLayout>
